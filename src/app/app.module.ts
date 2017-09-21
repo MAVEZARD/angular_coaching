@@ -9,6 +9,7 @@ import { DealersModule } from 'app/dealers/dealers.module';
 import { CoreModule } from 'app/core/core.module';
 import { CarsDisplayComponent } from 'app/cars/cars-display/cars-display.component';
 import { AppRoutingModule } from 'app/app-routing.module';
+import { SharedModule } from 'app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppRoutingModule } from 'app/app-routing.module';
     AdminModule,
     CarsModule,
     DealersModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
