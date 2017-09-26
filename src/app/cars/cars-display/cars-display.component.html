@@ -1,4 +1,13 @@
-<p>
-  cars-display works!
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group">
+      <li *ngFor="let auto of autos" class="list-group-item">
+        {{auto.modele}}
+        <button [routerLink]="auto.id">Détails</button></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 <app-message [message]="message" (clicked)="message = message + '1'"></app-message>
