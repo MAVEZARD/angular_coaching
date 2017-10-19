@@ -1,4 +1,10 @@
 <p>
   profile works!
 </p>
+<form>
+  <input type="text" name="name" [(ngModel)]="profile.name">
+  <input type="text" name="firstname" [(ngModel)]="profile.firstname">
+  <input type="email" name="login" [(ngModel)]="profile.login">
+  <input type="password" name="password">
+</form>
 <app-message></app-message>
